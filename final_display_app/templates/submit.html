@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<title>Input PIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<STYLE>
+a {
+text-decoration: none;
+}
+.button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   width: 150px;
+}
+
+.button:hover {
+  background-color: light-blue;
+  color: white;
+}
+</STYLE>
+<body>
+
+<div style="padding-top:50px">
+    <div id="id_display_div" class="w3-display-container w3-blue"
+         style="border-radius: 25px; border: 3px solid w3-light-blue;height:300px; width:700px; margin: auto;">
+        <form class="w3-container">
+            <br>
+                <label>First Name</label><br><br>
+                <input class="w3-input" id="pin_value" type="text" name="unique_number" onchange="getValue()"></p>
+            <p>
+            <br>
+                <p style="text-decoration:none;">
+                <button class="button" id="submit_button_id"><a  id="test" href="javascript:;" onclick="this.href='/final_display/' + document.getElementById('pin_value').value"type="button">OK</a></button>
+        </p>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
+

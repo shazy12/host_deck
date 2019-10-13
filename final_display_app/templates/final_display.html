@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Final Answer</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script language="JavaScript">
+        setInterval(function(){ document.location.reload(true); }, 5000);
+
+    </script>
+</head>
+
+<body>
+{% csrf_token %}
+
+<div style="padding-top:50px">
+    <div id="id_display_div" class="w3-display-container w3-light-blue"
+         style="border-radius: 25px; border: 3px solid black;height:300px; width:700px; margin: auto;">
+        <div class="w3-display-left" style="font-size:50px; padding: 10px;">{{ final_answer }}</div>
+        <div class="w3-display-right" style="font-size:50px; padding: 10px;">{{ final_answer }}</div>
+        <div class="w3-display-topmiddle" style="font-size:50px; padding: 10px;">{{ final_answer }}</div>
+        <div class="w3-display-bottommiddle" style="font-size:50px; padding: 10px;">{{ final_answer }}</div>
+    </div>
+</div>
+</body>
+</html>
